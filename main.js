@@ -1,7 +1,6 @@
 //-----------Module-----------------------
 
 const Discord = require('discord.js');
-const fs = require('fs');
 
 
 //------------Client----------------------
@@ -20,10 +19,6 @@ client.on('ready', () => {
 	console.log("BOT Chargé !");
 });
 
-
-//-------------TOKEN-------------------------
-
-client.login(TOKEN);
 
 
 //--------Commande -----------------
@@ -51,3 +46,7 @@ client.on('message', msg => {
 	annonces.send(msg);	
 	}
 });
+
+//-------------TOKEN-------------------------
+
+client.login(TOKEN);
